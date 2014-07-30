@@ -1,0 +1,10 @@
+{
+    "name": "UView",
+
+    "requires": [
+    "router",
+    "svgNavigatorComp"
+    ],
+
+    "id": "437068b6-76b8-4735-9a88-cc0ba5fd0468"
+}

@@ -1,0 +1,260 @@
+.img-el{
+    margin-bottom: 10px;
+}
+#images-view .x-panel-body{
+    background: white;
+    font: 11px Arial, Helvetica, sans-serif;
+}
+.popped {
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+.thumb{
+    background: #dddddd;
+    padding: 3px;
+    padding-bottom: 0;
+}
+.icon-plus{
+    background-image: url('resources/edit-add.png');
+    background-repeat: no-repeat;
+}
+.icon-minus{
+    background-image: url('resources/edit-clear.png');
+    background-repeat: no-repeat;
+}
+.lg-text{
+    font-weight:bolder;
+}
+.ball{
+    position:absolute;
+    background:none;
+}
+.ball-dot {
+    position: relative;
+    z-index:0;
+    padding: 3px;
+    width:0.5em;
+    height:0.5em;
+    background-color: #85144B;
+    border-radius: 10px;
+    clear: both;
+}
+.ball-pipedot {
+    position: relative;
+    z-index:0;
+    padding: 3px;
+    width:0.5em;
+    height:0.5em;
+    margin-bottom: 15px;
+    background-color: #85144B;
+    border-radius: 10px;
+    clear: both;
+}
+.ball-valvedot-opened {
+    position: relative;
+    z-index:0;
+    padding: 3px;
+    width:16px;
+    height:16px;
+    background: url('./cip_image/get_tpa.png') no-repeat;
+    background-size: contain;
+    clear: both;
+}
+.ball-valvedot-closed {
+    position: relative;
+    z-index:0;
+    padding: 3px;
+    width:16px;
+    height:16px;
+    background: url('./cip_image/get_tpa_fl.png') no-repeat;
+    background-size: contain;
+    clear: both;
+}
+.ball-valvedot-2 {
+    position: relative;
+    z-index:0;
+    padding: 3px;
+    width:16px;
+    height:16px;
+    background: url('./resources/valve-intermediate.png') no-repeat;
+    background-size: contain;
+    clear: both;
+}
+.ball-valvedot-1 {
+    position: relative;
+    z-index:0;
+    padding: 3px;
+    width:16px;
+    height:16px;
+    background: url('./resources/get_tpa.png') no-repeat;
+    background-size: contain;
+    clear: both;
+}
+.ball-valvedot-0 {
+    position: relative;
+    z-index:0;
+    padding: 3px;
+    width:16px;
+    height:16px;
+    background: url('./resources/valve-closed.png') no-repeat;
+    background-size: contain;
+    clear: both;
+}
+.ball-text {
+    cursor: pointer;
+    z-index:10;
+    color:#fff;
+    margin-top: 10px;
+    /* width: 100px; */
+    width: auto;
+}
+.ball-tt {
+    position: relative;
+    z-index:10;
+    /* width: 90px; */
+    width: auto;
+    height: auto;
+    padding: 0px;
+    background: #32BB00;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border:2px solid #006837;
+    padding-left: 5px
+}
+.ball-tt:after 
+{
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 9px;
+    border-style: solid;
+    border-width: 0px 15px 9px 0;
+    border-color: #32BB00 transparent;
+    display: block;
+    width: 0;
+}
+.ball-tt:before 
+{
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 7px;
+    border-style: solid;
+    border-width: 0px 20px 12px 0;
+    border-color: #006837 transparent;
+    display: block;
+    width: 0;
+}
+.ball-tt:hover {
+    border:2px solid #fff;
+}
+.ball-tt:hover:before {
+    border-color:#fff transparent;
+}
+.ball-tt-selected {
+    border:2px solid #fff;
+}
+.ball-tt-first {
+    background: white;
+    padding:3px;
+    position: relative;
+}
+.ball-arrow {
+    bottom:0;
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #FFFEEE;
+}
+.x-quirks #images-view .thumb {
+    padding-bottom: 3px;
+}
+.icon-height{
+    height:inherit;
+}
+/*.wrapper{
+    width: 9999px;
+}*/
+.thumb-wrap{
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 5px;
+}
+.thumb-wrap span {
+    
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: 86px; /* for ie to ensure that the text is centered */
+}
+
+.x-item-over{
+    border:1px solid #dddddd;
+    background: #efefef url(over.gif) repeat-x left top;
+    padding: 4px;
+}
+
+.x-item-selected{
+    border:1px solid #99bbe8;
+    padding: 4px;
+}
+.x-item-selected .thumb{
+    background:transparent;
+}
+.x-view-selector {
+    position:absolute;
+    left:0;
+    top:0;
+    width:0;
+    border:1px dotted;
+    opacity: .5;
+    -moz-opacity: .5;
+    filter:alpha(opacity=50);
+    zoom:1;
+    background-color:#c3daf9;
+    border-color:#3399bb;
+}
+.ext-strict .ext-ie .x-tree .x-panel-bwrap{
+    position:relative;
+    overflow:hidden;
+}
+.x-mask.splashscreen{
+    background-color: white;
+    opacity: 1;
+}
+.lg {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height: 100%;
+    background-color: #FFF;
+}
+#bg {
+    left:0px;
+    top:0px;
+    position: absolute;
+    cursor: pointer;
+    background: url('image_show_id.jpg') no-repeat;
+    background-size:cover;
+    width:6000px;
+    height:4000px;
+
+}
+#infopanel {
+    border: 1px solid #000;
+    margin: 10px;
+    margin-left: 0px;
+    width: 150px;
+    height: 50px;
+    background-color: #333;
+    color:#eee;
+    font-family: Helvetica;
+}
+#infopanel > div {
+    padding:0 0 0 10px;
+}
